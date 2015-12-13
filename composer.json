@@ -9,6 +9,9 @@
             "email": "andrewcarter1992@gmail.com"
         }
     ],
+    "bin": [
+        "pipin"
+    ],
     "autoload": {
         "psr-4": {
             "PiPHP\\PiPin\\": "src/"
