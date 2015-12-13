@@ -33,7 +33,7 @@ final class EdgeCommand extends AbstractPinCommand
 
             $pin->setEdge($edge);
         } else {
-            $output->write($pin->getEdge());
+            $output->writeln($pin->getEdge());
         }
     }
 }

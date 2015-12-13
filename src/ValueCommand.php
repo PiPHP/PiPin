@@ -33,7 +33,7 @@ final class ValueCommand extends AbstractPinCommand
 
             $pin->setValue($value);
         } else {
-            $output->write($pin->getValue());
+            $output->writeln($pin->getValue());
         }
     }
 }
