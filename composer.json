@@ -23,7 +23,7 @@
         }
     },
     "require": {
-        "symfony/console": "^3.0",
-        "piphp/gpio": "dev-master"
+        "symfony/console": "^2.8",
+        "piphp/gpio": "^0.1"
     }
 }
