@@ -3,7 +3,17 @@
 
 use Symfony\Component\Console\Application;
 
-require_once __DIR__ . '/vendor/autoload.php';
+$autoloadPaths = [
+    __DIR__ . '/vendor/autoload.php',
+    __DIR__ . '/../../../../autoload.php',
+];
+
+foreach ($autoloadPaths as $autoloadPath) {
+    if (file_exists($autoloadPath)) {
+        require_once $autoloadPath;
+        break;
+    }
+}
 
 $application = new Application;
 $application->addCommands([
