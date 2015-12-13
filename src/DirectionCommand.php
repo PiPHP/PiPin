@@ -33,7 +33,7 @@ final class DirectionCommand extends AbstractPinCommand
 
             $pin->setDirection($direction);
         } else {
-            $output->writeln($pin->getDirection());
+            $output->write($pin->getDirection());
         }
     }
 }
