@@ -1,0 +1,26 @@
+{
+    "name": "piphp/pipin",
+    "description": "A tool for accessing the GPIO pins on a Raspberry Pi",
+    "keywords": ["pipin", "gpio", "pi", "raspberry", "pin", "pins"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Carter",
+            "email": "andrewcarter1992@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PiPHP\\PiPin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PiPHP\\Test\\PiPin\\": "test/"
+        }
+    },
+    "require": {
+        "symfony/console": "^3.0",
+        "piphp/gpio": "dev-master"
+    }
+}
