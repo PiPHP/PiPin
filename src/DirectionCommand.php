@@ -22,10 +22,10 @@ final class DirectionCommand extends AbstractPinCommand
     {
         $pin = $this->getPin($input);
 
-        if ($input->hasArgument(self::PIN_DIRECTION_ARGUMENT)) {
-            $direction = $input->getArgument(self::PIN_DIRECTION_ARGUMENT);
+        $direction = $input->getArgument(self::PIN_DIRECTION_ARGUMENT);
 
-            $validDirections = [PinInterface::DIRECTION_INPUT, PinInterface::DIRECTION_OUTPUT];
+        if (null !== $direction) {
+            $validDirections = [PinInterface::DIRECTION_IN, PinInterface::DIRECTION_OUT];
 
             if (!in_array($direction, $validDirections)) {
                 throw new \InvalidArgumentException('Direction value must be one of: ' . implode(', ', $validDirections));

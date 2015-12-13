@@ -22,9 +22,9 @@ final class EdgeCommand extends AbstractPinCommand
     {
         $pin = $this->getPin($input);
 
-        if ($input->hasArgument(self::PIN_EDGE_ARGUMENT)) {
-            $edge = $input->getArgument(self::PIN_EDGE_ARGUMENT);
+        $edge = $input->getArgument(self::PIN_EDGE_ARGUMENT);
 
+        if (null !== $edge) {
             $validEdges = [PinInterface::EDGE_BOTH, PinInterface::EDGE_RISING, PinInterface::EDGE_FALLING, PinInterface::EDGE_NONE];
 
             if (!in_array($edge, $validEdges)) {

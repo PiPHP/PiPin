@@ -22,9 +22,9 @@ final class ValueCommand extends AbstractPinCommand
     {
         $pin = $this->getPin($input);
 
-        if ($input->hasArgument(self::PIN_VALUE_ARGUMENT)) {
-            $value = $input->getArgument(self::PIN_VALUE_ARGUMENT);
+        $value = $input->getArgument(self::PIN_VALUE_ARGUMENT);
 
+        if (null !== $value) {
             $validValues = [PinInterface::VALUE_HIGH, PinInterface::VALUE_LOW];
 
             if (!in_array($value, $validValues)) {
