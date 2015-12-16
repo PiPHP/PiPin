@@ -6,18 +6,18 @@ A tool for managing the GPIO pins on a Raspberry Pi.
 
 ```apache
 # Export/Unexport a pin
-pipin export [pin]
+pipin export   [pin]
 pipin unexport [pin]
 
 # Reading a pin state
-pipin value [pin]
+pipin value     [pin]
 pipin direction [pin]
-pipin edge [pin]
+pipin edge      [pin]
 
 # Changing a pin state
-pipin value [pin] [0|1]
+pipin value     [pin] [0|1]
 pipin direction [pin] [in|out]
-pipin edge [pin] [none|both|falling|rising]
+pipin edge      [pin] [none|both|falling|rising]
 ```
 
 ## How To Install
