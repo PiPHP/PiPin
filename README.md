@@ -22,10 +22,10 @@ pipin edge      [pin] [none|both|falling|rising]
 
 ## How To Install
 
-Make sure you have [composer](https://getcomposer.org/) installed.
+Make sure you have [composer](https://getcomposer.org/) installed, then:
 
 ```sh
-composer global require andrewcarteruk/cryptokey
+composer global require piphp/pipin
 ```
 
 Make sure you have added your global composer binary directory to the PATH in your `~/.bash_profile` (or `~/.bashrc`) file:
